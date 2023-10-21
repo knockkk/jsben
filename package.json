@@ -1,6 +1,6 @@
 {
   "name": "@knockkkjs/jsben",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "CLI tool for JavaScript benchmarking",
   "type": "module",
   "bin": {
