@@ -10,9 +10,9 @@ function executeBenchmarkPlugin() {
         const isBenchmark = functionName.toLowerCase().startsWith("benchmark");
         if (!isBenchmark) return;
 
-        const code = `(function () {
+        const code = `(async function () {
           let start = performance.now();
-          ${functionName}();
+          await ${functionName}();
           const t = performance.now() - start;
 
           let totalTime = 0;
@@ -31,7 +31,7 @@ function executeBenchmarkPlugin() {
 
             for(let i=0; i<count; i++){
               start = performance.now();
-              ${functionName}();
+              await ${functionName}();
               totalTime += performance.now() - start;
             }
           }else{
