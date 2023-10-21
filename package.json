@@ -1,0 +1,26 @@
+{
+  "name": "@knockkkjs/jsben",
+  "version": "0.1.0",
+  "description": "CLI tool for JavaScript benchmarking",
+  "type": "module",
+  "bin": {
+    "jsben": "./src/index.js"
+  },
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "js",
+    "benchmark"
+  ],
+  "author": {
+    "name": "knockkk",
+    "url": "https://github.com/knockkk"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.23.2",
+    "commander": "^11.1.0",
+    "ora": "5.4.1"
+  }
+}
